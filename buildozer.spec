@@ -1,19 +1,19 @@
 [app]
 
 # (str) Title of your application
-title = SchoolPassSanti
+title = schoolcard
 
 # (str) Package name
-package.name = SchoolPassSanti
+package.name = schoolcard
 
 # (str) Package domain (needed for android/ios packaging)
-package.domain = com.domain
+package.domain = org.test
 
 # (str) Source code where the main.py live
 source.dir = .
 
 # (list) Source files to include (let empty to include all the files)
-source.include_exts = py,png,jpg,kv,atlas
+source.include_exts = py,png,jpg,kv,atlas,mp4
 
 # (list) List of inclusions using pattern matching
 #source.include_patterns = assets/*,images/*.png
@@ -36,8 +36,8 @@ version = 0.1
 # version.filename = %(source.dir)s/main.py
 
 # (list) Application requirements
-# comma separated e.g. requirements = sqlite3,kivy
-requirements = python3==3.7.6,hostpython3==3.7.6,kivy,kivymd,pillow,ffpyplayer
+# comma separated e.g. requirements = sqlite3,kivy,kivymd
+requirements = python3,kivy,kivymd,pillow,ffpyplayer
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
@@ -64,7 +64,7 @@ orientation = portrait
 # author = © Copyright Info
 
 # change the major version of python used by the app
-osx.python_version = 3.7.6
+osx.python_version = 3
 
 # Kivy version to use
 osx.kivy_version = 1.9.1
